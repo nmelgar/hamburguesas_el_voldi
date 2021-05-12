@@ -28,6 +28,7 @@
 /*--------->General Styles<-----------*/
 body {
   background-color: var(--darkest-grey);
+  /*background-image: url(images/background-texture.jpg);*/
   color: var(--white);
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
@@ -54,11 +55,8 @@ h3, h4 {
   color: red;
 }
 
-#these-are {
-  font-size: 2.5em;
-  text-decoration: underline;
-  text-underline-position: under;
-  font-weight: 100;
+.main-image{
+  width: 20%;
 }
 
 img {
@@ -67,32 +65,6 @@ img {
 }
 
 /*--------->HEADER<-----------*/
-header {}
-
-#nav-bar {
-  background: var(--red);
-  padding: 10px;
-  position: fixed;
-  text-align: right;
-  width: 100%;
-}
-
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin-right: 2em;
-}
-
-nav ul li a {
-  color: var(--white);
-  text-decoration: none;
-  font-weight: 100;
-  font-size: 1.3em;
-}
-
-nav ul li a:hover {
-  color: var(--darkest-grey);
-}
 
 /*--------->Main<-----------*/
 #main-content {
@@ -103,59 +75,6 @@ nav ul li a:hover {
   justify-content: center;
 }
 
-.projects-container {
-  background-color: var(--dark-blue);
-  margin-top: 4em;
-  padding-top: 4.5em;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 1em;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-}
-
-.project-image {
-  width: 100%;
-}
-
-.project-container {
-  background: var(--darkest-grey);
-  padding: 0;
-  margin: 1em;
-}
-
-.project-container figcaption {
-  padding: 1em;
-}
-
-.project-container a {
-  color: white;
-  text-decoration: none;
-}
-
-.project-container:hover a {
-  color: red;
-}
-
-.showall {
-  padding-top: 0.8em;
-  padding-bottom: 4em;
-  margin: 20px;
-}
-
-#showall-text {
-  background: var(--darkest-grey);
-  font-size: 1.5em;
-  padding: 0.5em 1.5em 0.5em 1.5em;
-  color: var(--white);
-}
-
-#showall-text:hover {
-  background: var(--red);
-}
 
 .contact {
   align-items: center;
@@ -200,19 +119,15 @@ nav ul li a:hover {
 /*--------->Media Queries<-----------*/
 /*This rule is just for the projects to adapt to screen better*/
 @media (max-width: 1086px) {
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .main-image{
+    width: 30%;
   }
+
 }
 
 @media (max-width: 768px) {
-  #nav-bar {
-    background: var(--red);
-    padding: 10px;
-    position: fixed;
-    text-align: center;
-    width: 100%;
+  .main-image{
+    width: 40%;
   }
 
   #main-content {
@@ -230,9 +145,6 @@ nav ul li a:hover {
     font-style: italic;
   }
 
-  #these-are {
-    font-size: 2em;
-  }
 
   #social-media-links {
     flex-wrap: wrap;
@@ -240,9 +152,9 @@ nav ul li a:hover {
 }
 
 @media (max-width: 640px) {
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr;
+
+  .main-image{
+    width: 40%;
   }
 }
 
