@@ -1,0 +1,151 @@
+/*
+  FONTS
+  Variables
+  General
+  Header
+  Main
+  Images
+  footer
+  Media Queries
+  Notes
+*/
+/*--------->FONTS<-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@00&display=swap');
+
+/*--------->Variables<-----------*/
+:root {
+  --black: #0D0D0D;
+  --red: #d90d0d;
+  --green: #0A5926;
+}
+
+/*--------->General Styles<-----------*/
+body {
+  background-color: var(--darkest-grey);
+  /*background-image: url(images/background-texture.jpg);*/
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  /*Max width for the main container*/
+  max-width: 100%;
+  text-align: center;
+}
+
+h1,
+h2 {}
+
+
+h3,
+h4 {}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*--------->HEADER<-----------*/
+
+/*--------->Main<-----------*/
+#main-content {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+
+.contact {
+  align-items: center;
+  border-bottom: 0.8em solid var(--red);
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.contact ul li a:hover {
+  color: red;
+}
+
+.social-btn {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+#social-media-links {
+  align-items: center;
+  display: inherit;
+  flex-flow: row;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#social-media-links li {
+  list-style: none;
+  padding: 10px;
+}
+
+#social-media-links li a {
+  text-decoration: none;
+}
+
+/*--------->Footer<-----------*/
+/*--------->Media Queries<-----------*/
+/*This rule is just for the projects to adapt to screen better*/
+@media (max-width: 1086px) {
+  .main-image {
+    width: 30%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .main-image {
+    width: 40%;
+  }
+
+  #main-content {
+    padding: 10px;
+  }
+
+  h1,
+  h2 {
+    font-size: 3em;
+  }
+
+  h3,
+  h4 {
+    color: #e40017;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+
+  #social-media-links {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .main-image {
+    width: 40%;
+  }
+}
+
+/*--------->NOTES<-----------*/
+/*
+- Para centrar algo horizontalmente en navegadores modernos, usa display:
+ flex; justify-content: center;
+
+- Sin embargo, en navegadores antiguos como IE8-9, flexbox no está disponible.
+Para poder centrar un elemento horizontalmente con respecto a su contenedor,
+usa margin: 0 auto;
+
+*/
