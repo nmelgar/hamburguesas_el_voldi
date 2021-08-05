@@ -9,10 +9,10 @@
   Media Queries
   Notes
 */
-/*--------->FONTS<-----------*/
+/*--------->FONTS<--------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@00&display=swap');
 
-/*--------->Variables<-----------*/
+/*--------->Variables<--------------------*/
 :root {
   --black: #0D0D0D;
   --dark-grey: #495057;
@@ -22,7 +22,7 @@
   --white: #fff;
 }
 
-/*--------->General Styles<-----------*/
+/*--------->General Styles<--------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ body {
 
 }
 
-/*--------->HEADER<-----------*/
+/*--------->HEADER<--------------------*/
 header {
   width: 100%;
   margin: 0 auto;
@@ -51,6 +51,18 @@ header {
   padding: 10px 50px 0 50px
 }
 
+/*LEFT SIDE, LOGO*/
+.logo-container {
+  display: grid;
+  justify-items: start;
+  width: 100%;
+}
+
+.logo-container img {
+  width: 80px;
+}
+
+/*RIGHT SIDE, NAV ITEMS*/
 .navigation-list {
   display: grid;
   align-items: center;
@@ -67,28 +79,61 @@ header {
   text-decoration: none;
 }
 
-.logo-container {
+/*NAV LIST WILL SHOW FOR SMALL SCREENS*/
+.navigation-list-small {
   display: grid;
-  justify-items: start;
-  width: 100%;
+  align-items: center;
+  grid-column-start: 2;
+  justify-items: end;
+  display: none;
 }
 
-.logo-container img {
-  width: 80px;
+.navigation-list-small li {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 15px;
 }
 
-/*--------->Main<-----------*/
+.navigation-list-small li a {
+  color: var(--white);
+  text-decoration: none;
 
-/*--------->Footer<-----------*/
-/*--------->Media Queries<-----------*/
+}
+
+.menu-icon-container {
+  display: none;
+}
+
+
+/*--------->Main<--------------------*/
+
+/*--------->Footer<--------------------*/
+/*--------->Media Queries<--------------------*/
 /*This rule is just for the projects to adapt to screen better*/
 @media (max-width: 1086px) {}
+
+@media (max-width: 929px) {
+  .navigation-list {
+    display: none;
+  }
+
+  .menu-icon-container {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+
+  }
+
+  .menu-icon-container img {
+    width: 60px;
+  }
+}
 
 @media (max-width: 768px) {}
 
 @media (max-width: 640px) {}
 
-/*--------->NOTES<-----------*/
+/*--------->NOTES<--------------------*/
 /*
 - Para centrar algo horizontalmente en navegadores modernos, usa display:
  flex; justify-content: center;
