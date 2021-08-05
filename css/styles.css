@@ -23,10 +23,11 @@
 }
 
 /*--------->General Styles<-----------*/
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: var(--dark-grey);
   /*background-image: url(images/background-texture.jpg);*/
@@ -34,43 +35,48 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   /*Max width for the main container*/
-  
+
 }
 
 /*--------->HEADER<-----------*/
-header{
+header {
   width: 100%;
   margin: 0 auto;
 }
-.navigation-bar{
+
+.navigation-bar {
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 0 auto;
-  padding: 5px 40px 0 40px
+  padding: 10px 50px 0 50px
 }
-.navigation-list{
+
+.navigation-list {
   display: grid;
   align-items: center;
+  justify-items: end;
 }
 
-.navigation-list ul li{
+.navigation-list ul li {
   display: inline-block;
-  margin-right: 10%;
+  margin-left: 60px;
 }
 
-.navigation-list ul li a{
+.navigation-list ul li a {
   color: var(--white);
   text-decoration: none;
 }
 
-.logo-container{
+.logo-container {
   display: grid;
-  justify-items: end;
+  justify-items: start;
   width: 100%;
 }
-.logo-container img{
+
+.logo-container img {
   width: 80px;
 }
+
 /*--------->Main<-----------*/
 
 /*--------->Footer<-----------*/
