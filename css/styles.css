@@ -127,6 +127,10 @@ header {
   .menu-icon-container img {
     width: 60px;
   }
+
+  .menu-icon-container img:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: 768px) {}
