@@ -11,7 +11,7 @@
 */
 /*--------->FONTS<--------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@00&display=swap');
-
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
 /*--------->Variables<--------------------*/
 :root {
   --black: #0D0D0D;
@@ -32,7 +32,9 @@ body {
   background-color: var(--dark-grey);
   /*background-image: url(images/background-texture.jpg);*/
   color: var(--white);
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Harry Potter', sans-serif;
+                                                
   margin: 0 auto;
   /*Max width for the main container*/
 
@@ -107,35 +109,58 @@ header {
 
 /*--------->Menu Options<--------------------*/
 
-h1{
+h1 {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.menu-all-options{
+.menu-all-options {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 15% 85%;
   max-width: 1920px;
-  padding: 20px;
+  padding: 30px;
   justify-items: center;
   text-align: center;
 }
-
-.menu-option{
+            /*LEFT SIDE PART OF THE MENU*/
+.menu-option {
   width: 1fr;
 }
 
-.menu-option figure img{
-  width: 300px;
-  height: 300px;
+.menu-option figure img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
 
-.menu-option figure a{
+.menu-option figure a {
   color: var(--red);
   text-decoration: none;
 }
 
+.menu-left-side{
+  justify-self: start;
+  text-align: center;
+}
+
+            /*RIGHT SIDE PART OF THE MENU*/
+.menu-content {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.menu-item{
+  padding: 10px;
+}
+
+.menu-content figure img {
+  width: 200px;
+}
+
+.menu-content figure a {
+  color: var(--red);
+  text-decoration: none;
+}
 
 
 
