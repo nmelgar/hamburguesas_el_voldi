@@ -105,7 +105,39 @@ header {
 }
 
 
-/*--------->Main<--------------------*/
+/*--------->Menu Options<--------------------*/
+
+h1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-all-options{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1920px;
+  padding: 20px;
+  justify-items: center;
+  text-align: center;
+}
+
+.menu-option{
+  width: 1fr;
+}
+
+.menu-option figure img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.menu-option figure a{
+  color: var(--red);
+  text-decoration: none;
+}
+
+
+
 
 /*--------->Footer<--------------------*/
 /*--------->Media Queries<--------------------*/
