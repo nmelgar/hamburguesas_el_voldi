@@ -123,6 +123,7 @@ header {
   display: grid;
   /* justify-content: center; */
   margin: 60px;
+  
 }
 
 .options-items-container{
@@ -132,6 +133,9 @@ header {
 
 .item-container{
   margin-right: 40px;
+  border-bottom: 2px solid white;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .item-name-price{
@@ -171,7 +175,18 @@ header {
 
 @media (max-width: 768px) {}
 
-@media (max-width: 640px) {}
+@media (max-width: 640px) {
+  .options-items-container{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .item-container{
+    margin-right: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+}
 
 /*--------->NOTES<--------------------*/
 /*
