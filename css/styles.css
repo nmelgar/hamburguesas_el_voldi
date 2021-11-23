@@ -12,6 +12,7 @@
 /*--------->FONTS<--------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@00&display=swap');
 @import url('http://fonts.cdnfonts.com/css/harry-potter');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 /*--------->Variables<--------------------*/
 :root {
@@ -30,7 +31,8 @@
 }
 
 body {
-  background-color: var(--dark-grey);
+  /* background-color: var(--dark-grey); */
+  background-color: #000;
   /*background-image: url(images/background-texture.jpg);*/
   color: var(--white);
   /* font-family: 'Roboto', sans-serif; */
@@ -126,6 +128,13 @@ header {
   
 }
 
+h2{
+  border-bottom: 2px solid white;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-size: 32px;
+}
+
 .options-items-container{
   display: grid;
   grid-template-columns: 50% 50%;
@@ -133,11 +142,14 @@ header {
 
 .item-container{
   margin-right: 40px;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
   padding-bottom: 20px;
   margin-bottom: 40px;
 }
 
+.item-name{
+  font-size: 18px;
+}
 .item-name-price{
   display: grid;
   grid-template-columns: 50% 50%;
@@ -147,6 +159,10 @@ header {
   text-align: end;
 }
 
+.ingredients-paragraph{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
 /*--------->Footer<--------------------*/
 /*--------->Media Queries<--------------------*/
 /*This rule is just for the projects to adapt to screen better*/
