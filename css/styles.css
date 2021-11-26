@@ -129,10 +129,13 @@ header {
 }
 
 h2{
-  border-bottom: 2px solid white;
+  color: #4d9fce;
+  border-bottom: 2px solid #4d9fce;
   margin-bottom: 30px;
   padding-bottom: 10px;
-  font-size: 32px;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .options-items-container{
@@ -149,6 +152,8 @@ h2{
 
 .item-name{
   font-size: 18px;
+  /* font-weight: 400; */
+  letter-spacing: 1px;
 }
 .item-name-price{
   display: grid;
@@ -163,6 +168,19 @@ h2{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
 }
+
+/* #go-top-button{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 8px;
+  border-radius: 50%;
+
+} */
 /*--------->Footer<--------------------*/
 /*--------->Media Queries<--------------------*/
 /*This rule is just for the projects to adapt to screen better*/
