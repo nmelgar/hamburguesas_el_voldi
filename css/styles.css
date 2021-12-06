@@ -207,7 +207,23 @@ h2{
   }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .menu-container{
+    display: grid;
+    /* justify-content: center; */
+    margin: 40px;
+    
+  }
+
+  .logo-container img {
+    width: 60px;
+  }
+  
+}
+
+.menu-icon-container img {
+  width: 50px;
+}
 
 @media (max-width: 640px) {
   .options-items-container{
