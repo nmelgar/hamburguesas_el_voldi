@@ -6,4 +6,4 @@ class Meal(models.Model):
     category = models.CharField(max_length=1, choices=CATEGORY_CHOICES, blank=False)
     name = models.CharField(max_length=100)
     description = models.TextField(max_length=300)
-    cost = models.IntegerField()
+    cost = models.DecimalField(max_digits=4, decimal_places=2)
