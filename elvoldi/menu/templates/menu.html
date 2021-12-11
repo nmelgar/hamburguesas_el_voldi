@@ -1,0 +1,11 @@
+<h1>ALl the meals</h1>
+
+{% for meal in meals.all%}
+    {%if meal.category == 'H'%}
+        {{meal.name}}
+    {%elif meal.category == 'P'%}
+        {{meal.name}}
+    {%elif meal.category == 'B'%}
+        {{meal.name}}
+    {%endif%}
+{%endfor%}
