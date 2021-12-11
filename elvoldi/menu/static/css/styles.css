@@ -1,0 +1,256 @@
+/*
+  FONTS
+  Variables
+  General
+  Header
+  Main
+  Images
+  footer
+  Media Queries
+  Notes
+*/
+/*--------->FONTS<--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@00&display=swap');
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/*--------->Variables<--------------------*/
+:root {
+  --black: #0D0D0D;
+  --dark-grey: #495057;
+  --darkest-grey: #343A40;
+  --green: #0A5926;
+  --red: #d90d0d;
+  --white: #fff;
+}
+
+/*--------->General Styles<--------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: var(--dark-grey); */
+  background-color: #000;
+  /*background-image: url(images/background-texture.jpg);*/
+  color: var(--white);
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Harry Potter', sans-serif;
+  margin: 0 auto;
+  /*Max width for the main container*/
+
+}
+
+/*--------->HEADER<--------------------*/
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navigation-bar {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 auto;
+  padding: 10px 50px 0 50px
+}
+
+/*LEFT SIDE, LOGO*/
+.logo-container {
+  display: grid;
+  justify-items: start;
+  width: 100%;
+}
+
+.logo-container img {
+  width: 80px;
+}
+
+/*RIGHT SIDE, NAV ITEMS*/
+.navigation-list {
+  display: grid;
+  align-items: center;
+  justify-items: end;
+}
+
+.navigation-list ul li {
+  display: inline-block;
+  margin-left: 60px;
+}
+
+.navigation-list ul li a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/*NAV LIST WILL SHOW FOR SMALL SCREENS*/
+.navigation-list-small {
+  display: grid;
+  align-items: center;
+  grid-column-start: 2;
+  justify-items: end;
+  display: none;
+}
+
+.navigation-list-small li {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.navigation-list-small li a {
+  color: var(--white);
+  text-decoration: none;
+
+}
+
+.menu-icon-container {
+  display: none;
+}
+
+
+.cover-container{
+  margin-top: 20px;
+  max-width: 100%;
+  height: 250px;
+}
+
+.cover-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*--------->Menu Options<--------------------*/
+.menu-container{
+  display: grid;
+  /* justify-content: center; */
+  margin: 60px;
+  
+}
+
+h2{
+  color: #4d9fce;
+  border-bottom: 2px solid #4d9fce;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.option-menu-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 10px;
+
+}
+
+.options-items-container{
+ 
+}
+
+.item-container{
+  margin-right: 40px;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.item-name{
+  font-size: 18px;
+  /* font-weight: 400; */
+  letter-spacing: 1px;
+}
+.item-name-price{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.item-price{
+  text-align: end;
+}
+
+.ingredients-paragraph{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+/* #go-top-button{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 8px;
+  border-radius: 50%;
+
+} */
+/*--------->Footer<--------------------*/
+/*--------->Media Queries<--------------------*/
+/*This rule is just for the projects to adapt to screen better*/
+@media (max-width: 1086px) {}
+
+@media (max-width: 929px) {
+  .navigation-list {
+    display: none;
+  }
+
+  .menu-icon-container {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+
+  }
+
+  .menu-icon-container img {
+    width: 60px;
+  }
+
+  .menu-icon-container img:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-container{
+    display: grid;
+    /* justify-content: center; */
+    margin: 40px;
+    
+  }
+
+  .logo-container img {
+    width: 60px;
+  }
+  
+}
+
+.menu-icon-container img {
+  width: 50px;
+}
+
+@media (max-width: 640px) {
+  .option-menu-container{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .item-container{
+    margin-right: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+/*--------->NOTES<--------------------*/
+/*
+- Para centrar algo horizontalmente en navegadores modernos, usa display:
+ flex; justify-content: center;
+
+- Sin embargo, en navegadores antiguos como IE8-9, flexbox no está disponible.
+Para poder centrar un elemento horizontalmente con respecto a su contenedor,
+usa margin: 0 auto;
+
+*/

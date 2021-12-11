@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+{% load static %}
 
 <head>
     <meta charset="utf-8">
@@ -7,9 +8,9 @@
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/logo-main.png">
+    <link rel="icon" type="image/png" href="{% static 'images/logo-main.png' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 </head>
 
@@ -18,15 +19,16 @@
         <!--menu section-->
         <div class="menu-container">
             <!--HAMBURGUERS STARTS HERE-->
+            <h2 class="option-title">Hamburguesas</h2>
             <div class="option-menu-container">
-                <h2 class="option-title">Hamburguesas</h2>
+                
                 {% for meal in meals.all%}
                 {%if meal.category == 'H'%}
                 <div class="options-items-container">
                     <div class="item-container">
                         <div class="item-name-price">
                             <h4>{{meal.name}}</h4>
-                            <p class="item-price">{{meal.cost}}</p>
+                            <p class="item-price">${{meal.cost}}</p>
                         </div>
                         <p class="ingredients-paragraph">{{meal.description}}</p>
                     </div>
@@ -35,15 +37,16 @@
                 {%endfor%}
             </div>
             <!--PAPAS STARTS HERE-->
+            <h2 class="option-title">Papas</h2>
             <div class="option-menu-container">
-                <h2 class="option-title">Papas</h2>
+                
                 {% for meal in meals.all%}
                 {%if meal.category == 'P'%}
                 <div class="options-items-container">
                     <div class="item-container">
                         <div class="item-name-price">
                             <h4>{{meal.name}}</h4>
-                            <p class="item-price">{{meal.cost}}</p>
+                            <p class="item-price">${{meal.cost}}</p>
                         </div>
                         <p class="ingredients-paragraph">{{meal.description}}</p>
                     </div>
@@ -53,15 +56,16 @@
             </div>
 
             <!--BEBIDAS STARTS HERE-->
+            <h2 class="option-title">Bebidas</h2>
             <div class="option-menu-container">
-                <h2 class="option-title">Bebidas</h2>
+                
                 {% for meal in meals.all%}
                 {%if meal.category == 'B'%}
                 <div class="options-items-container">
                     <div class="item-container">
                         <div class="item-name-price">
                             <h4>{{meal.name}}</h4>
-                            <p class="item-price">{{meal.cost}}</p>
+                            <p class="item-price">${{meal.cost}}</p>
                         </div>
                         <p class="ingredients-paragraph">{{meal.description}}</p>
                     </div>
