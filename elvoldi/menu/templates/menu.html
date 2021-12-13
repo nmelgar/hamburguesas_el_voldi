@@ -16,12 +16,18 @@
 
 <body>
     <div class="container">
+        {% include 'header.html' %}
         <!--menu section-->
+
+        <div class="cover-container">
+            <img src="{% static 'images/cover-voldi.jpg' %}" alt="Voldemort with hand to the front">
+        </div>
+
         <div class="menu-container">
             <!--HAMBURGUERS STARTS HERE-->
             <h2 class="option-title">Hamburguesas</h2>
             <div class="option-menu-container">
-                
+
                 {% for meal in meals.all%}
                 {%if meal.category == 'H'%}
                 <div class="options-items-container">
@@ -39,7 +45,7 @@
             <!--PAPAS STARTS HERE-->
             <h2 class="option-title">Papas</h2>
             <div class="option-menu-container">
-                
+
                 {% for meal in meals.all%}
                 {%if meal.category == 'P'%}
                 <div class="options-items-container">
@@ -58,7 +64,7 @@
             <!--BEBIDAS STARTS HERE-->
             <h2 class="option-title">Bebidas</h2>
             <div class="option-menu-container">
-                
+
                 {% for meal in meals.all%}
                 {%if meal.category == 'B'%}
                 <div class="options-items-container">
@@ -74,6 +80,7 @@
                 {%endfor%}
             </div>
         </div>
+        {% include 'footer.html' %}
     </div>
     <!---CONTAINER ENDS HERE-->
 </body>
