@@ -52,7 +52,9 @@ header {
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 0 auto;
-  padding: 10px 50px 0 50px
+  padding: 10px 50px 0 50px;
+  align-items: center;
+
 }
 
 /*LEFT SIDE, LOGO*/
@@ -104,31 +106,33 @@ header {
 
 }
 
+
 .menu-icon-container {
   display: none;
 }
 
 
-.cover-container{
+.cover-container {
   margin-top: 20px;
   max-width: 100%;
   height: 250px;
 }
 
-.cover-container img{
+.cover-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 /*--------->Menu Options<--------------------*/
-.menu-container{
+.menu-container {
   display: grid;
   /* justify-content: center; */
   margin: 60px;
-  
+
 }
 
-h2{
+h2 {
   color: #4d9fce;
   border-bottom: 2px solid #4d9fce;
   margin-bottom: 30px;
@@ -138,42 +142,38 @@ h2{
   letter-spacing: 2px;
 }
 
-.option-menu-container{
+.options-items-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  row-gap: 10px;
-
 }
 
-.options-items-container{
- 
-}
-
-.item-container{
+.item-container {
   margin-right: 40px;
   border-bottom: 1px solid white;
   padding-bottom: 20px;
   margin-bottom: 40px;
 }
 
-.item-name{
+.item-name {
   font-size: 18px;
   /* font-weight: 400; */
   letter-spacing: 1px;
 }
-.item-name-price{
+
+.item-name-price {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.item-price{
+.item-price {
   text-align: end;
 }
 
-.ingredients-paragraph{
+.ingredients-paragraph {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
 }
+
 
 /* #go-top-button{
   position: fixed;
@@ -188,6 +188,37 @@ h2{
 
 } */
 /*--------->Footer<--------------------*/
+footer {
+  background-color: var(--darkest-grey);
+  display: grid;
+  text-align: center;
+  padding-bottom: 50px;
+  border-top: 0.5px solid white;
+}
+
+.footer-social {
+  margin-top: 40px;
+}
+
+.footer-social ul {
+  margin-top: 20px;
+}
+
+.footer-social ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 50px;
+}
+
+.footer-social ul li a {
+  color: #4d9fce;
+  padding: 20px;
+}
+
+.footer-social ul li a:hover {
+  color: #fff;
+}
+
 /*--------->Media Queries<--------------------*/
 /*This rule is just for the projects to adapt to screen better*/
 @media (max-width: 1086px) {}
@@ -199,45 +230,48 @@ h2{
 
   .menu-icon-container {
     display: grid;
-    justify-items: end;
-    align-items: center;
-
+    
   }
 
-  .menu-icon-container img {
-    width: 60px;
+  .menu-icon-container a {
+    color: white;
+    font-size: 30px;
+    justify-self: end;
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+    
   }
 
-  .menu-icon-container img:hover {
-    opacity: 0.5;
+  .menu-icon-container a:hover{
+    color: #4d9fce;
   }
+
+
 }
 
 @media (max-width: 768px) {
-  .menu-container{
+  .menu-container {
     display: grid;
     /* justify-content: center; */
     margin: 40px;
-    
+
   }
 
   .logo-container img {
     width: 60px;
   }
-  
+
 }
 
-.menu-icon-container img {
-  width: 50px;
-}
 
 @media (max-width: 640px) {
-  .option-menu-container{
+  .options-items-container {
     display: grid;
     grid-template-columns: 100%;
   }
 
-  .item-container{
+  .item-container {
     margin-right: 0px;
     padding-bottom: 20px;
     margin-bottom: 40px;
