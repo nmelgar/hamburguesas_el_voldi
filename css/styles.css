@@ -87,12 +87,14 @@ header {
 
 /*NAV LIST WILL SHOW FOR SMALL SCREENS*/
 .navigation-list-small {
-  display: grid;
   align-items: center;
   grid-column-start: 2;
   justify-items: end;
   display: none;
+  
 }
+
+
 
 .navigation-list-small li {
   list-style: none;
