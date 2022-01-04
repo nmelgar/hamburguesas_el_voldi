@@ -29,19 +29,13 @@
           </ul>
         </div>
 
-        <!--This is the BARS icon--->
-        <div class="menu-icon-container">
-          <a id="menu-button" href="#"><i class="fa fa-bars"></i></a>
-          <!-- <button id="menu-button"><i class="fa fa-bars"></i></button> -->
-        </div>
-        <!---THis is display as none-->
-        <div class="navigation-list-small" id="navigation-list-small-js">
-          <ul class="navigation-items">
-            <li><a href="">Menú</a></li>
-            <li><a href="">Menú</a></li>
-            <li><a href="">Menú</a></li>
-            <li><a href="">Menú</a></li>
-          </ul>
+        <div class="dropdown">
+          <span><i onclick="dropDownFunction()" class="dropbtn fa fa-bars"></i></span>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
 
       </nav>
