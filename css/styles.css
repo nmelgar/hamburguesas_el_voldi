@@ -22,6 +22,7 @@
   --green: #0A5926;
   --red: #d90d0d;
   --white: #fff;
+  --blue: #4d9fce;
 }
 
 /*--------->General Styles<--------------------*/
@@ -86,14 +87,6 @@ header {
 }
 
 /*NAV LIST WILL SHOW FOR SMALL SCREENS*/
-.navigation-list-small {
-  align-items: center;
-  grid-column-start: 2;
-  justify-items: end;
-  display: none;
-
-}
-
 .menu-icon-container {
   display: none;
 }
@@ -112,7 +105,7 @@ header {
 }
 
 .dropbtn {
-  color: #4d9fce;
+  color: var(--blue);
   /* padding: 16px; */
   font-size: 30px;
   border: none;
@@ -165,8 +158,8 @@ header {
 }
 
 h2 {
-  color: #4d9fce;
-  border-bottom: 2px solid #4d9fce;
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
   margin-bottom: 30px;
   padding-bottom: 10px;
   font-size: 40px;
@@ -243,7 +236,7 @@ footer {
 }
 
 .footer-social ul li a {
-  color: #4d9fce;
+  color: var(--blue);
   padding: 20px;
 }
 
